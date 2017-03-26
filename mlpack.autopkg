@@ -1,0 +1,24 @@
+nuget{
+	nuspec{
+		id = mlpack;
+		version: 2.2.0;
+		authors: {Ryan Curtin};
+		copyright: Copyright (c) 2007-2016, mlpack contributors;
+		licenseUrl: https://github.com/mlpack/mlpack/blob/master/LICENSE.txt;
+		projectUrl: https://github.com/mlpack/mlpack;
+		iconUrl: http://www.mlpack.org/mlpack.png;
+	}
+	dependencies {
+		packages : {
+			OpenBLAS/0.2.14.1,
+			armadillo-code/7.800.2
+		};
+	}
+	files{
+		include:{"src/**/*.hpp"};
+		[x64]{
+			lib: "build/release/mlpack.lib";
+			bin: "build/release/mlpack.dll";
+		}
+	}
+}
