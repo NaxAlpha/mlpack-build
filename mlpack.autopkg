@@ -3,7 +3,6 @@ nuget{
 		id = mlpack;
 		version: 2.2.0;
 		authors: {Ryan Curtin};
-		copyright: Copyright (c) 2007-2016, mlpack contributors;
 		licenseUrl: https://github.com/mlpack/mlpack/blob/master/LICENSE.txt;
 		projectUrl: https://github.com/mlpack/mlpack;
 		iconUrl: http://www.mlpack.org/mlpack.png;
