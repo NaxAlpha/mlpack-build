@@ -1,11 +1,7 @@
 nuget{
 	nuspec{
-		id = mlpack;
+		id=mlpack;
 		version: 2.2.0;
-		authors: {Ryan Curtin};
-		licenseUrl: https://github.com/mlpack/mlpack/blob/master/LICENSE.txt;
-		projectUrl: https://github.com/mlpack/mlpack;
-		iconUrl: http://www.mlpack.org/mlpack.png;
 	}
 	dependencies {
 		packages : {
@@ -15,7 +11,7 @@ nuget{
 	}
 	files{
 		include:{"build/include/**/*.hpp"};
-		[x64]{
+		[x64,dynamic]{
 			lib: "build/release/mlpack.lib";
 			bin: "build/release/mlpack.dll";
 		}
