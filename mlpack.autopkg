@@ -15,7 +15,7 @@ nuget{
 		};
 	}
 	files{
-		include:{"src/**/*.hpp"};
+		include:{"build/include/**/*.hpp"};
 		[x64]{
 			lib: "build/release/mlpack.lib";
 			bin: "build/release/mlpack.dll";
