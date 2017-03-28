@@ -16,7 +16,11 @@ nuget{
 			bin: "build/release/mlpack.dll";
 		}
 	}
-	#output-packages {
-		default : ${pkgname};
-	}
+	bin += {  
+		#output {
+			package = redist;
+		};
+		#add-each-file : ::nuget.[redist]targets.[${condition}].CopyToOutput;
+		#destination : ${d_bin};  
+	};
 }
