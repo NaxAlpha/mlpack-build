@@ -16,4 +16,7 @@ nuget{
 			bin: "build/release/mlpack.dll";
 		}
 	}
+	#output-packages {
+		default : ${pkgname};
+	}
 }
